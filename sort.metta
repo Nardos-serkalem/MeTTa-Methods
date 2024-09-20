@@ -9,7 +9,7 @@
 
 
 (= (bubbleSort Nil) Nil)
-(= (bubbleSort (:: $x Nil)) (:: $x Nil))
-(= (bubbleSort (:: $x $xs)))
+(= (bubbleSort (Cons $x Nil)) (Cons $x Nil))
+(= (bubbleSort (Cons $x $xs)))
 ;; test case
- !(bubbleSort (:: 3 (:: 2 (:: 1 (:: 4 (:: 5 Nil))))))
+ !(bubbleSort (Cons 3 (Cons 2 (Cons 1 (Cons 4 (Cons 5 Nil))))))
